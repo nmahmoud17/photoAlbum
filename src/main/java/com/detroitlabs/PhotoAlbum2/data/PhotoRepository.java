@@ -20,7 +20,9 @@ public class PhotoRepository {
             new Photo("Ronda", LocalDate.of(2016,02,02), "sarcasm"),
             new Photo("sanDiego", LocalDate.of(2017,02,02), "sarcasm"),
             new Photo("seville", LocalDate.of(2016,02,02), "sarcasm"),
-            new Photo("sanfrancisco", LocalDate.of(2015,04,13), "sarcasm")
+            new Photo("sanfrancisco", LocalDate.of(2015,04,13), "sarcasm"),
+            new Photo("newyork", LocalDate.of(2015,8,13), "sarcasm")
+
     );
 
     public List<Photo> show5photos(){
