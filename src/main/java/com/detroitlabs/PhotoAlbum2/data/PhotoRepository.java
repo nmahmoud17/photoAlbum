@@ -4,10 +4,7 @@ import com.detroitlabs.PhotoAlbum2.model.Photo;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 @Component
 public class PhotoRepository {
@@ -22,7 +19,8 @@ public class PhotoRepository {
             new Photo("residenceZanzibar", LocalDate.of(2015,05,02), "sarcasm"),
             new Photo("Ronda", LocalDate.of(2016,02,02), "sarcasm"),
             new Photo("sanDiego", LocalDate.of(2017,02,02), "sarcasm"),
-            new Photo("seville", LocalDate.of(2016,02,02), "sarcasm")
+            new Photo("seville", LocalDate.of(2016,02,02), "sarcasm"),
+            new Photo("sanfrancisco", LocalDate.of(2015,04,13), "sarcasm")
     );
 
     public List<Photo> show5photos(){
@@ -33,6 +31,16 @@ public class PhotoRepository {
             fivePhotos.add(photo);
         }
         return fivePhotos;
+    }
+
+    public List<Photo> sortByDate(){
+        Collections.sort(ALL_PHOTOS, new Comparator<Photo>() {
+            @Override
+            public int compare(Photo o1, Photo o2) {
+                return o1.getUploadDate().compareTo(o2.getUploadDate());
+            }
+        }); return ALL_PHOTOS;
+
     }
 
 }

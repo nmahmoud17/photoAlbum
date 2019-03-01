@@ -18,10 +18,17 @@ public class PhotoController {
     private PhotoRepository photoRepository;
 
     @RequestMapping("/")
-    public String sayHello(ModelMap modelMap){
+    public String showFivePhotos(ModelMap modelMap){
         List<Photo> fivePhotos = photoRepository.show5photos();
         modelMap.put("fivePhotos", fivePhotos);
         return "home";
+    }
+
+    @RequestMapping("/sortedDate")
+    public String showSortedByDatePhotos(ModelMap modelMap){
+        List<Photo> photo = photoRepository.sortByDate();
+        modelMap.put("sortedDate", photo);
+        return "sortingPhotosByDate";
     }
 
 }
