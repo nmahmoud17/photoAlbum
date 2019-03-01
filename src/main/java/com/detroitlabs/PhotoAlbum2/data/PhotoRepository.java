@@ -10,7 +10,6 @@ import java.util.*;
 public class PhotoRepository {
 
     private static final List<Photo> ALL_PHOTOS = Arrays.asList(
-            new Photo("beach", LocalDate.of(2019,8,01),"funny"),
             new Photo("alexandriaLibrary", LocalDate.of(2019,9,02), "sarcasm"),
             new Photo("amalfiCoast", LocalDate.of(2012,07,02), "sarcasm"),
             new Photo("chicago", LocalDate.of(2018,02,02), "sarcasm"),

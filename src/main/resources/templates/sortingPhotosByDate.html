@@ -11,7 +11,7 @@
         <div class="col s12 l4" th:each="photo : ${sortedDate}" >
             <h4 th:text = "${photo.name}">Photo name</h4>
             <img th:src="@{|photos/${photo.name}.jpg|}" alt="photo"/>
-            <p th:text="'Date uploaded ' + ${photo.uploadDate}">Date Uploaded</p>
+            <p th:text="'Date uploaded ' + ${photo.uploadDate}"></p>
         </div>
     </div>
 </div>
