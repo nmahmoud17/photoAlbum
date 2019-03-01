@@ -20,7 +20,7 @@ public class PhotoController {
     @RequestMapping("/")
     public String sayHello(ModelMap modelMap){
         List<Photo> fivePhotos = photoRepository.show5photos();
-        modelMap.put("photo",fivePhotos);
+        modelMap.put("fivePhotos", fivePhotos);
         return "home";
     }
 
