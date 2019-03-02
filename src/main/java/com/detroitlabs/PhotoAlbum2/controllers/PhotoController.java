@@ -21,7 +21,7 @@ public class PhotoController {
     public String showFivePhotos(ModelMap modelMap){
         List<Photo> fivePhotos = photoRepository.show5photos();
         modelMap.put("fivePhotos", fivePhotos);
-        return "home";
+        return "index";
     }
 
     @RequestMapping("/sortedDate")
@@ -30,5 +30,14 @@ public class PhotoController {
         modelMap.put("sortedDate", photo);
         return "sortingPhotosByDate";
     }
+
+//    @RequestMapping("/sortedDate")
+//    public String showPhotosByTag(ModelMap modelMap){
+//        List<Photo> photo = photoRepository.sortByDate();
+//        modelMap.put("tag", photo);
+//        return "tag";
+//    }
+
+
 
 }
