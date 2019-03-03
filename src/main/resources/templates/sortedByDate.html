@@ -76,8 +76,8 @@
 
     <!-- Projects Row -->
     <div class="row">
-        <div th:each="photo : ${sortedDate}">
-            <img th:src="@{|photos/${photo.name}.jpg|}" alt="photo"/>
+        <div class = "sortedDate" th:each="photo : ${sortedDate}">
+            <img th:src="@{|photos/${photo.name}.jpg|}" alt="photo" height=70% width=70%/>
             <h4 th:text = "${photo.printName}">Photo name</h4>
             <p th:text="'Date uploaded ' + ${photo.uploadDate}"></p>
 

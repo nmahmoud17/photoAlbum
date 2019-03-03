@@ -38,7 +38,6 @@ public class PhotoRepository {
             new Photo("RowingItaly","Gondolier", LocalDate.of(2018,04,24),"Europe"),
             new Photo("TwinPeaks","Twin Peaks, SF", LocalDate.of(2016,3,13),"USA"),
             new Photo("WashingtonSQPark","Washington Square Park", LocalDate.of(2014,10,30),"USA"),
-            new Photo("DC","White House", LocalDate.of(2017,07,07),"USA"),
             new Photo("ZanziATV","ATV in Zanzibar", LocalDate.of(2016,05,05),"Africa")
 
             );
