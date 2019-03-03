@@ -31,12 +31,7 @@ public class PhotoController {
         return "sortingPhotosByDate";
     }
 
-//    @RequestMapping("/sortedDate")
-//    public String showPhotosByTag(ModelMap modelMap){
-//        List<Photo> photo = photoRepository.sortByDate();
-//        modelMap.put("tag", photo);
-//        return "tag";
-//    }
+
 
 
 

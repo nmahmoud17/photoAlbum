@@ -44,7 +44,16 @@ public class PhotoRepository {
 
     }
 
+    public List<Photo> showBYTag(String tag){
 
+        List<Photo> photosInTag = new ArrayList<>();
+        for (Photo photo: ALL_PHOTOS){
+            if (photo.getTag().equalsIgnoreCase(tag)) {
+                photosInTag.add(photo);
+            }
+        }
+        return photosInTag;
+    }
 
 
 
