@@ -28,7 +28,7 @@ public class PhotoController {
     public String showSortedByDatePhotos(ModelMap modelMap){
         List<Photo> photo = photoRepository.sortByDate();
         modelMap.put("sortedDate", photo);
-        return "sortingPhotosByDate";
+        return "sortedByDate";
     }
 
 
