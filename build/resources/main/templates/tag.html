@@ -62,6 +62,7 @@
 </nav>
 
 <!-- Content -->
+<div class = "container">
 
 <!-- Heading -->
 <div class="row">
@@ -75,7 +76,7 @@
 
 <!-- Projects Row -->
 <div class="row">
-    <div class="col-md-6 portfolio-item"  th:text="@{${tag.tag}}"></div></div>
+    <div th:text="@{${tag.tag}}"></div>
     <!--
         Repeat the div element for each object in the 'gifs'
         collection of the model map. Each object in the loop
@@ -100,8 +101,9 @@
                 the 'favorite' field of the 'gif' object from the
                 loop above
             -->
-        </a>
+
     </div>
+</div>
 
 
 
@@ -181,6 +183,7 @@
     <!--</div>-->
     <!-- /.row -->
 
+</div>
 <!-- /.container -->
 
 <footer>
