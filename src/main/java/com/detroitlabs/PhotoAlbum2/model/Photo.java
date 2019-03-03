@@ -7,11 +7,21 @@ public class Photo {
     private String name;
     private LocalDate uploadDate;
     private String tag;
+    private String printName;
 
-    public Photo(String name, LocalDate uploadDate, String tag) {
+    public Photo(String name, String printName, LocalDate uploadDate, String tag) {
         this.name = name;
+        this.printName = printName;
         this.uploadDate = uploadDate;
         this.tag = tag;
+    }
+
+    public String getPrintName() {
+        return printName;
+    }
+
+    public void setPrintName(String printName) {
+        this.printName = printName;
     }
 
     public String getName() {

@@ -32,7 +32,7 @@ public class TagController {
         Tag tag1 = tagRepository.findByTag(tag);
         modelMap.put("tag", tag1);
 
-        List<Photo> photos = photoRepository.showBYTag(tag);
+        List<Photo> photos = photoRepository.showPhotosByTag(tag);
         modelMap.put("photos", photos);
         return "tag";
     }
